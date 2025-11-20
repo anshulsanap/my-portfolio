@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - ENGR 1340</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/profile.jpg" alt="Profile Photo">
+            <h1>Anshul Sanap</h1>
+            <h2>First-Year Computer Science Student</h2>
+        </header>
+
+        <main>
+            <section class="about-me" id="about-section">
+                <button id="highlight-btn">Highlight This Section</button>
+                <h2>About Me</h2>
+                <p>
+                    Hello! I am a freshman Computer Science student at Texas Tech University. 
+                    I am passionate about coding, algorithms, and building web applications.
+                </p>
+            </section>
+
+            <section class="interests">
+                <button id="toggle-btn">Hide My Interests</button>
+                <h2>My Interests</h2>
+                <ul id="interests-list">
+                    <li>Web Development</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Video Game Design</li>
+                    <li>Robotics</li>
+                </ul>
+            </section>
+
+            <section class="projects">
+                <h2>My Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portfolio Website</td>
+                            <td>Built with HTML, CSS, and JavaScript.</td>
+                            <td>Fall 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Engineering Ethics</td>
+                            <td>Case study analysis of engineering failures.</td>
+                            <td>Sept 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="key-features">
+                <h2>Key Skills</h2>
+                <div class="features">
+                    <div class="feature-item">
+                        <h3>Python</h3>
+                        <p>Experience with data analysis and scripting.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Java</h3>
+                        <p>Object-oriented programming and algorithms.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>HTML/CSS</h3>
+                        <p>Building responsive web layouts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <p>Have a question? Send me a message below.</p>
+                <form action="mailto:your.email@ttu.edu" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <button id="contact-btn">Show My Email</button>
+            <p id="email-display"></p>
+
+            <p>&copy; 2025 Anshul Sanap</p>
+            <p>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
